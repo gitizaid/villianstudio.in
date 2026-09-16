@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Music | VillianStudio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            VILLIANSTUDIO
+        </div>
+
+        <div class="dashboard-nav">
+            <a href="dashboard.html" class="admin-btn">
+                Dashboard
+            </a>
+
+            <a href="index.html" class="admin-btn">
+                Website
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- MUSIC MANAGEMENT -->
+    <main>
+
+        <section class="manage-page">
+
+            <div class="section-label">
+                MUSIC MANAGEMENT
+            </div>
+
+            <h1>
+                Manage <span>Music</span>
+            </h1>
+
+            <p class="manage-description">
+                Add and manage temporary music content for the website.
+            </p>
+
+
+            <!-- ADD SONG FORM -->
+            <div class="manage-box">
+
+                <h2>Add New Song</h2>
+
+                <form id="songForm">
+
+                    <label for="songName">
+                        Song Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="songName"
+                        placeholder="Enter song name"
+                        required
+                    >
+
+
+                    <label for="songCategory">
+                        Category
+                    </label>
+
+                    <input
+                        type="text"
+                        id="songCategory"
+                        placeholder="Example: Freestyle"
+                        required
+                    >
+
+
+                    <label for="songDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="songDescription"
+                        placeholder="Enter song description"
+                        rows="5"
+                        required
+                    ></textarea>
+
+
+                    <label for="youtubeLink">
+                        YouTube Link
+                    </label>
+
+                    <input
+                        type="url"
+                        id="youtubeLink"
+                        placeholder="https://youtube.com/..."
+                    >
+
+
+                    <label for="songImage">
+                        Song Thumbnail
+                    </label>
+
+                    <input
+                        type="file"
+                        id="songImage"
+                        accept="image/*"
+                    >
+
+
+                    <label for="songAudio">
+                        Audio File
+                    </label>
+
+                    <input
+                        type="file"
+                        id="songAudio"
+                        accept="audio/*"
+                    >
+
+
+                    <button type="submit" class="primary-btn">
+                        Add Song
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- SONG LIST -->
+            <div class="manage-list">
+
+                <div class="list-header">
+                    <h2>Current Songs</h2>
+                    <span id="songCount">0 Songs</span>
+                </div>
+
+                <div id="songList"></div>
+
+                    <div class="empty-message">
+                        No songs added yet.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            VILLIANSTUDIO
+        </div>
+
+        <p>
+            Music • Films • Visuals • Stories
+        </p>
+
+        <p class="copyright">
+            © 2026 VillianStudio. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
